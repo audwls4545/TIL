@@ -6,8 +6,22 @@
 ## 출력조건
 ## 첫째 줄에 게임의 룰에 맞게 선택한 카드에 적힌 숫자를 출력한다.
 
-def game(N, M):
+def game():
     num = 0
+    num_list = []
     N, M = map(int, input().split())
+
+    for _ in range(N):
+        num_list.append(list(map(int, input().split())))
+    
+    print(num_list)
+
+    for i, check in enumerate(num_list):
+        min_num = min(check)
+        if i == 0:
+            num = min_num
+        else:
+            if num < min_num:
+                num = min_num
 
     return num
