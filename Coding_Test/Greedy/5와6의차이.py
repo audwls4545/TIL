@@ -13,7 +13,3 @@ def hub():
     max_hub = int(A.replace('5','6')) + int(B.replace('5','6'))
 
     print(min_hub, max_hub)
-
-
-hub()
-    
